@@ -13,6 +13,7 @@ class School
     if @roster.keys.none? {|num| num==grade}
       #Don't know if next line is necessary.
       #The lab instructions seem to say so.
+      #but code works without it.
       #@roster[grade]=[]
       @roster[grade]=[student]
     else
