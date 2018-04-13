@@ -11,6 +11,10 @@ class School
   def add_student(student,grade)
     #@roster[grade]=[]
     if @roster.keys.none? {|num| num==grade}
+      #Don't know if next line is necessary.
+      #The lab instructions seem to say so.
+      #but code works without it.
+      #@roster[grade]=[]
       @roster[grade]=[student]
     else
       @roster[grade]<<student
@@ -36,6 +40,4 @@ class School
       name.sort!
     end
   end
-
-
 end
